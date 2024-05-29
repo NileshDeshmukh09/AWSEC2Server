@@ -52,7 +52,7 @@ app.get("/items", async (req, res) => {
 });
 
 app.get("/", (req, res) => {
-  res.send("Welcome to AWS EC2 Deploy Server!");
+  res.send("Welcome to AWS EC2  Deploy Server By Nilesh Deshmukh !! ");
 }); 
 
 app.listen(port, () => {
