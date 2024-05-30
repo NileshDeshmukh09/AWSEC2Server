@@ -5,7 +5,7 @@ const multer = require("multer");
 const multerS3 = require("multer-s3");
 const AWS = require("aws-sdk");
 require('dotenv').config();
-const port = process.env.PORT || 7000;
+const port = process.env.PORT || 8000;
 
 // Middleware to parse JSON
 app.use(express.json());
