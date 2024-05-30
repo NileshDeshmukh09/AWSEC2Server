@@ -17,7 +17,7 @@ AWS.config.update({
 });
 
 // MongoDB connection string
-const uri = process.env.MONGO_URI
+const uri = process.env.MONGO_URI || "mongodb+srv://nileshdeshmukh0908:Nilesh@cluster0.lyge7ft.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
   
 
 mongoose
@@ -95,7 +95,7 @@ app.get("/items", async (req, res) => {
     res.status(200).send({
       success: true,
       totalItems : items.length,
-      items,
+      items, 
     });
   } catch (err) {
     console.log(err);
